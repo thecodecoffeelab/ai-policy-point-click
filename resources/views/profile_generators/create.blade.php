@@ -109,9 +109,9 @@
 
                  <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                     
-                    <button type="submit" class="items-center justify-center rounded-md border border-transparent bg-black-600 px-5
-                     py-3 text-base font-medium text-white hover:bg-black-700 focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2">
-                     Generate policy 🚀
+                     <button type="submit" class="items-center justify-center rounded-md border border-transparent bg-black px-5
+                     py-3 text-base font-medium text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2">
+                     Generate Policy🚀
                     </button>
                 </div>
             </form>
