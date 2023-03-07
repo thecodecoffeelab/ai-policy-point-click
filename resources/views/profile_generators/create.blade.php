@@ -21,7 +21,6 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="text" 
                 name="dname"
-                autocomplete="dname" 
                 id="dname"
                 placeholder="Document name" 
                 required
@@ -32,7 +31,6 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="number" 
                 name="dnumber"
-                autocomplete="dnumber" 
                 id="dnumber" 
                 placeholder="Document number" 
                 required
@@ -43,8 +41,7 @@
                 <input 
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="number" 
-                name="rnumber"
-                autocomplete="rnumber" 
+                name="rnumber" 
                 id="rnumber" 
                 placeholder="Revision number" 
                 required
@@ -57,7 +54,6 @@
                 <input 
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 name="approve"
-                autocomplete="approve" 
                 type="text" 
                 id="approve" 
                 placeholder="Approved by" 
@@ -70,7 +66,6 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="date" 
                 name="creationdate"
-                autocomplete="creationdate" 
                 id="creationdate" 
                 required
                 value="{{ request()->creationdate ?? '' }}"><br/>
@@ -81,7 +76,6 @@
                 <select 
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 name="ptype"
-                autocomplete="ptype"
                 id="ptype" 
                 placeholder="Policy type" 
                 required
@@ -99,7 +93,6 @@
                     id="content"
                     name="content"
                     type="text"
-                    autocomplete="content"
                     placeholder="Policy name" 
                     required
                     class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg"
