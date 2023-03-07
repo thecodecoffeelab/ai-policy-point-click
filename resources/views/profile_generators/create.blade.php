@@ -30,6 +30,7 @@
                 id="dname"
                 placeholder="Document name" 
                 required
+                style='display: none'
                 value="{{ request()->dname ?? '' }}"> <br/>
                 
                 <label for="dnumber">Document Number</label>
@@ -41,6 +42,7 @@
                 id="dnumber" 
                 placeholder="Document number" 
                 required
+                style='display: none'
                 value="{{ request()->dnumber ?? '' }}"> <br/>
 
                 <label for="rnumber">Revision Number</label>
@@ -53,6 +55,7 @@
                 id="rnumber" 
                 placeholder="Revision number" 
                 required
+                style='display: none'
                 value="{{ request()->rnumber ?? '' }}">
                 <br/>
 
@@ -67,6 +70,7 @@
                 id="approve" 
                 placeholder="Approved by" 
                 required
+                style='display: none'
                 value="{{ request()->approve ?? '' }}"> <br/>
 
                 <label for="creationdate">Creation Date</label>
@@ -78,6 +82,7 @@
                 autocomplete="false" 
                 id="creationdate" 
                 required
+                style='display: none'
                 value="{{ request()->creationdate ?? '' }}"><br/>
 
                 <label for="ptype">Policy Type</label>
@@ -90,6 +95,7 @@
                 id="ptype" 
                 placeholder="Policy type" 
                 required
+                style='display: none'
                 value="{{ request()->ptype ?? '' }}
                 >
                     <option value="select">select type:</option>
@@ -107,6 +113,7 @@
                     autocomplete="false"
                     placeholder="Policy name" 
                     required
+                    style='display: none'
                     class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg"
                     value="{{ request()->content ?? '' }}"
                 >
