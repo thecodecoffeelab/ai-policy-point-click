@@ -12,7 +12,7 @@
             Write the policy name and click on Generate policy</span></small><br/><br/>
             <form
                 method="post"
-                action="{{route('generate-policy')}}"
+                action="{{ route('generate-policy') }}"
             >
                 @csrf
                 <label for="dname">Document Name</label>
@@ -21,8 +21,6 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="text" 
                 name="dname"
-                style='display: none'
-                autocomplete="false" 
                 id="dname"
                 placeholder="Document name" 
                 required
@@ -33,7 +31,6 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="number" 
                 name="dnumber"
-                autocomplete="false" 
                 id="dnumber" 
                 placeholder="Document number" 
                 required
@@ -45,7 +42,6 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="number" 
                 name="rnumber"
-                autocomplete="false" 
                 id="rnumber" 
                 placeholder="Revision number" 
                 required
@@ -58,7 +54,6 @@
                 <input 
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 name="approve"
-                autocomplete="false" 
                 type="text" 
                 id="approve" 
                 placeholder="Approved by" 
@@ -71,7 +66,6 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="date" 
                 name="creationdate"
-                autocomplete="false" 
                 id="creationdate" 
                 required
                 value="{{ request()->creationdate ?? '' }}"><br/>
