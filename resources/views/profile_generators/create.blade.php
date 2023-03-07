@@ -15,9 +15,9 @@
             PROMPT GUIDE</span><br/>
             <small><span style="color:#2C5364; font-size: 14px; font-weight:bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             Write the policy name and click on Generate policy</span></small><br/><br/>
-            <form
+                        <form
                 method="post"
-                action="{{ route('generate-policy') }}"
+                action="{{route('generate-policy')}}"
             >
                 @csrf
                 <label for="dname">Document Name</label>
@@ -26,11 +26,12 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="text" 
                 name="dname"
+                style='display: none'
                 autocomplete="false" 
                 id="dname"
                 placeholder="Document name" 
                 required
-                value="{{ request()->dname ?? '' }}"> <br/>
+                value="{{request()->dname ?? ''}}"> <br/>
                 
                 <label for="dnumber">Document Number</label>
                 <input 
@@ -41,7 +42,7 @@
                 id="dnumber" 
                 placeholder="Document number" 
                 required
-                value="{{ request()->dnumber ?? '' }}"> <br/>
+                value="{{request()->dnumber ?? ''}}"> <br/>
 
                 <label for="rnumber">Revision Number</label>
                 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -53,7 +54,7 @@
                 id="rnumber" 
                 placeholder="Revision number" 
                 required
-                value="{{ request()->rnumber ?? '' }}">
+                value="{{request()->rnumber ?? ''}}">
                 <br/>
 
                 <label for="approve">Approved by</label>
@@ -67,7 +68,7 @@
                 id="approve" 
                 placeholder="Approved by" 
                 required
-                value="{{ request()->approve ?? '' }}"> <br/>
+                value="{{request()->approve ?? ''}}"> <br/>
 
                 <label for="creationdate">Creation Date</label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -78,7 +79,7 @@
                 autocomplete="false" 
                 id="creationdate" 
                 required
-                value="{{ request()->creationdate ?? '' }}"><br/>
+                value="{{request()->creationdate ?? ''}}"><br/>
 
                 <label for="ptype">Policy Type</label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -90,7 +91,7 @@
                 id="ptype" 
                 placeholder="Policy type" 
                 required
-                value="{{ request()->ptype ?? '' }}
+                value="{{request()->ptype ?? ''}}
                 >
                     <option value="select">select type:</option>
                     <option value="Privacy">Privacy</option>
@@ -108,14 +109,15 @@
                     placeholder="Policy name" 
                     required
                     class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg"
-                    value="{{ request()->content ?? '' }}"
+                    value="{{request()->content ?? ''}}"
                 >
                 <br/><br/>
 
-                 <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">               
+                 <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                    
                     <button type="submit" class="items-center justify-center rounded-md border border-transparent bg-green-600 px-5
                      py-3 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
-                     Generate Policy 🚀
+                     Generate policy 🚀
                     </button>
                 </div>
             </form>
