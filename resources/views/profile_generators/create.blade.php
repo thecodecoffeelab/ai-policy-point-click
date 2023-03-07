@@ -106,12 +106,7 @@
                     
                     <button type="submit" class="items-center justify-center rounded-md border border-transparent bg-green-600 px-5
                      py-3 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
-                     Generate policy 🚀
-                    </button>
-            
-                     <button type="submit" class="items-center justify-center rounded-md border border-transparent bg-black px-5
-                     py-3 text-base font-medium text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2">
-                     Store in DB🚀
+                     Generate Policy 🚀
                     </button>
 
                 </div>
