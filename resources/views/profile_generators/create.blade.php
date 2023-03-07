@@ -21,6 +21,7 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="text" 
                 name="dname"
+                autocomplete="on"
                 id="dname"
                 placeholder="Document name" 
                 required
@@ -31,6 +32,7 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="number" 
                 name="dnumber"
+                autocomplete="on"
                 id="dnumber" 
                 placeholder="Document number" 
                 required
@@ -41,7 +43,8 @@
                 <input 
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="number" 
-                name="rnumber" 
+                name="rnumber"
+                autocomplete="on"
                 id="rnumber" 
                 placeholder="Revision number" 
                 required
@@ -54,6 +57,7 @@
                 <input 
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 name="approve"
+                autocomplete="on"
                 type="text" 
                 id="approve" 
                 placeholder="Approved by" 
@@ -66,6 +70,7 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="date" 
                 name="creationdate"
+                autocomplete="on"
                 id="creationdate" 
                 required
                 value="{{ request()->creationdate ?? '' }}"><br/>
@@ -76,6 +81,7 @@
                 <select 
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 name="ptype"
+                autocomplete="on"
                 id="ptype" 
                 placeholder="Policy type" 
                 required
@@ -93,6 +99,7 @@
                     id="content"
                     name="content"
                     type="text"
+                    autocomplete="on"
                     placeholder="Policy name" 
                     required
                     class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg"
@@ -102,10 +109,11 @@
 
                  <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                     
-                     <button type="submit" class="items-center justify-center rounded-md border border-transparent bg-green-600 px-5
+                    <button type="submit" class="items-center justify-center rounded-md border border-transparent bg-green-600 px-5
                      py-3 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
                      Generate Policy 🚀
                     </button>
+
                 </div>
             </form>
         </div>
