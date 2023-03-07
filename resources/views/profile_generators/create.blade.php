@@ -2,7 +2,7 @@
 @section('content')
     <div class="bg-white">
         <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8 text-center">
-        <img src="{{ url('images/pc.png')}}" alt="" width="300" height="100">
+        <img src="{{ url('https://www.pointclick.net/wp-content/uploads/pointclick_logo_Proxy.png')}}" alt="" width="300" height="100">
             <h2 class="inline text-3xl font-bold tracking-tight text-blue-800 sm:block sm:text-4xl">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-user fa-beat text-[25px] text-grey-600"></i> AI Policy Generator <i class="fa-solid fa-user fa-beat text-[25px] text-grey-600"></i></h2>
             <p class="inline text-3xl font-bold tracking-tight text-green-600 sm:block sm:text-4xl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OpenAI auto-generated policy</p><br/>
