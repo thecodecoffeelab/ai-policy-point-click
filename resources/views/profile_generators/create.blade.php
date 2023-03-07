@@ -4,9 +4,9 @@
         <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8 text-center">
         <img src="https://www.pointclick.net/wp-content/uploads/pointclick_logo_Proxy.png" alt="" width="300" height="100">
         <script>
-        $(document).ready(function () {
-                $('input').attr('autocomplete', 'false');
-            });
+        $(window).load(function() { // can also try on document ready
+            $('input[autocomplete]').removeAttr('autocomplete');
+        });
         </script>
             <h2 class="inline text-3xl font-bold tracking-tight text-blue-800 sm:block sm:text-4xl">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-user fa-beat text-[25px] text-grey-600"></i> AI Policy Generator <i class="fa-solid fa-user fa-beat text-[25px] text-grey-600"></i></h2>
@@ -30,7 +30,6 @@
                 id="dname"
                 placeholder="Document name" 
                 required
-                style='display: none'
                 value="{{ request()->dname ?? '' }}"> <br/>
                 
                 <label for="dnumber">Document Number</label>
@@ -42,7 +41,6 @@
                 id="dnumber" 
                 placeholder="Document number" 
                 required
-                style='display: none'
                 value="{{ request()->dnumber ?? '' }}"> <br/>
 
                 <label for="rnumber">Revision Number</label>
@@ -55,7 +53,6 @@
                 id="rnumber" 
                 placeholder="Revision number" 
                 required
-                style='display: none'
                 value="{{ request()->rnumber ?? '' }}">
                 <br/>
 
@@ -70,7 +67,6 @@
                 id="approve" 
                 placeholder="Approved by" 
                 required
-                style='display: none'
                 value="{{ request()->approve ?? '' }}"> <br/>
 
                 <label for="creationdate">Creation Date</label>
@@ -82,7 +78,6 @@
                 autocomplete="false" 
                 id="creationdate" 
                 required
-                style='display: none'
                 value="{{ request()->creationdate ?? '' }}"><br/>
 
                 <label for="ptype">Policy Type</label>
@@ -95,7 +90,6 @@
                 id="ptype" 
                 placeholder="Policy type" 
                 required
-                style='display: none'
                 value="{{ request()->ptype ?? '' }}
                 >
                     <option value="select">select type:</option>
@@ -113,19 +107,16 @@
                     autocomplete="false"
                     placeholder="Policy name" 
                     required
-                    style='display: none'
                     class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg"
                     value="{{ request()->content ?? '' }}"
                 >
                 <br/><br/>
 
-                 <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                    
+                 <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">               
                     <button type="submit" class="items-center justify-center rounded-md border border-transparent bg-green-600 px-5
                      py-3 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
                      Generate Policy 🚀
                     </button>
-
                 </div>
             </form>
         </div>
