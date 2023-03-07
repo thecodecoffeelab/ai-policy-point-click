@@ -21,14 +21,10 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="text" 
                 name="dname"
-                x-autocompletetype="dname"
-                autocomplete="on"
+                autocomplete="false" 
                 id="dname"
                 placeholder="Document name" 
                 required
-                onfocus="if (this.hasAttribute('readonly')) { this.removeAttribute('readonly');
-    // fix for mobile safari to show virtual keyboard
-    this.blur();    this.focus();  }"
                 value="{{ request()->dname ?? '' }}"> <br/>
                 
                 <label for="dnumber">Document Number</label>
@@ -36,14 +32,10 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="number" 
                 name="dnumber"
-                x-autocompletetype="dnumber"
-                autocomplete="on"
+                autocomplete="false" 
                 id="dnumber" 
                 placeholder="Document number" 
                 required
-                onfocus="if (this.hasAttribute('readonly')) { this.removeAttribute('readonly');
-    // fix for mobile safari to show virtual keyboard
-    this.blur();    this.focus();  }"
                 value="{{ request()->dnumber ?? '' }}"> <br/>
 
                 <label for="rnumber">Revision Number</label>
@@ -52,14 +44,10 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="number" 
                 name="rnumber"
-                x-autocompletetype="rnumber"
-                autocomplete="on"
+                autocomplete="false" 
                 id="rnumber" 
                 placeholder="Revision number" 
                 required
-                onfocus="if (this.hasAttribute('readonly')) { this.removeAttribute('readonly');
-    // fix for mobile safari to show virtual keyboard
-    this.blur();    this.focus();  }"
                 value="{{ request()->rnumber ?? '' }}">
                 <br/>
 
@@ -69,15 +57,11 @@
                 <input 
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 name="approve"
-                x-autocompletetype="approve"
-                autocomplete="on"
+                autocomplete="false" 
                 type="text" 
                 id="approve" 
                 placeholder="Approved by" 
                 required
-                onfocus="if (this.hasAttribute('readonly')) { this.removeAttribute('readonly');
-    // fix for mobile safari to show virtual keyboard
-    this.blur();    this.focus();  }"
                 value="{{ request()->approve ?? '' }}"> <br/>
 
                 <label for="creationdate">Creation Date</label>
@@ -86,13 +70,9 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="date" 
                 name="creationdate"
-                x-autocompletetype="creationdate"
-                autocomplete="on"
+                autocomplete="false" 
                 id="creationdate" 
                 required
-                onfocus="if (this.hasAttribute('readonly')) { this.removeAttribute('readonly');
-    // fix for mobile safari to show virtual keyboard
-    this.blur();    this.focus();  }"
                 value="{{ request()->creationdate ?? '' }}"><br/>
 
                 <label for="ptype">Policy Type</label>
@@ -101,14 +81,10 @@
                 <select 
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 name="ptype"
-                x-autocompletetype="ptype"
-                autocomplete="on"
+                autocomplete="false"
                 id="ptype" 
                 placeholder="Policy type" 
                 required
-                onfocus="if (this.hasAttribute('readonly')) { this.removeAttribute('readonly');
-    // fix for mobile safari to show virtual keyboard
-    this.blur();    this.focus();  }"
                 value="{{ request()->ptype ?? '' }}
                 >
                     <option value="select">select type:</option>
@@ -123,13 +99,9 @@
                     id="content"
                     name="content"
                     type="text"
-                    x-autocompletetype="content"
-                    autocomplete="on"
+                    autocomplete="false"
                     placeholder="Policy name" 
                     required
-                    onfocus="if (this.hasAttribute('readonly')) { this.removeAttribute('readonly');
-    // fix for mobile safari to show virtual keyboard
-    this.blur();    this.focus();  }"
                     class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg"
                     value="{{ request()->content ?? '' }}"
                 >
