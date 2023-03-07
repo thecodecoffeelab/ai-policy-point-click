@@ -21,6 +21,7 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="text" 
                 name="dname"
+                x-autocompletetype="dname"
                 autocomplete="on"
                 id="dname"
                 placeholder="Document name" 
@@ -32,6 +33,7 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="number" 
                 name="dnumber"
+                x-autocompletetype="dnumber"
                 autocomplete="on"
                 id="dnumber" 
                 placeholder="Document number" 
@@ -44,6 +46,7 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="number" 
                 name="rnumber"
+                x-autocompletetype="rnumber"
                 autocomplete="on"
                 id="rnumber" 
                 placeholder="Revision number" 
@@ -57,6 +60,7 @@
                 <input 
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 name="approve"
+                x-autocompletetype="approve"
                 autocomplete="on"
                 type="text" 
                 id="approve" 
@@ -70,6 +74,7 @@
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 type="date" 
                 name="creationdate"
+                x-autocompletetype="creationdate"
                 autocomplete="on"
                 id="creationdate" 
                 required
@@ -81,6 +86,7 @@
                 <select 
                 class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-green-500 focus:ring-green-500 sm:max-w-lg" 
                 name="ptype"
+                x-autocompletetype="ptype"
                 autocomplete="on"
                 id="ptype" 
                 placeholder="Policy type" 
@@ -99,6 +105,7 @@
                     id="content"
                     name="content"
                     type="text"
+                    x-autocompletetype="content"
                     autocomplete="on"
                     placeholder="Policy name" 
                     required
